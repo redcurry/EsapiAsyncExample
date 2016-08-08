@@ -1,0 +1,22 @@
+﻿<Window
+    x:Class="EsapiAsyncExample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="My Window"
+    >
+    <StackPanel>
+        <Button
+            Command="{Binding CalculateOrCancelMeanDoseCommand}"
+            >
+            Calculate or Cancel Mean Dose
+        </Button>
+        <ProgressBar
+            Value="{Binding Progress}"
+            Minimum="0.0"
+            Maximum="1.0"
+            />
+        <TextBlock
+            Text="{Binding MeanDose}"
+            />
+    </StackPanel>
+</Window>
