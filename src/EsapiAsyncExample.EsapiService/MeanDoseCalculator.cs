@@ -24,7 +24,7 @@ namespace EsapiAsyncExample.EsapiService
         }
 
         /// <summary>
-        /// Implements <seealso cref="IMeanDoseCalculator.CalculateForActivePlanSetupAsync" />
+        /// Implements <see cref="IMeanDoseCalculator.CalculateForActivePlanSetupAsync" />
         /// </summary>
         public Task<DoseValue> CalculateForActivePlanSetupAsync(
             IProgress<double> progress, CancellationToken cancellation)
